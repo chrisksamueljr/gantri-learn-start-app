@@ -10,9 +10,12 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+	 email = new FormControl('', [Validators.required,Validators.email]);
 
+
+	 getErrorMessage() {
+	 	return this.email.hasError('required') ? 'You must enter a value': 
+	 	this.email.hasError('email') ? 'Not a valid email' : '';
+	 }
 }

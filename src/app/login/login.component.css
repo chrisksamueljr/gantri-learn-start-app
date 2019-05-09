@@ -19,18 +19,40 @@
       text-align: center;
     }
 
-.login-box {
-  background-color: #F4F4F4;
+input:invalid {
+  border: 2px solid red;
+  background-color: #f0b5b5;
 }
 
+input:valid {
+  border: 2px solid black;
+}
+
+.login-box {
+  background-color: #F4F4F4;
+  height: 245px;
+  width: 315px;
+}
+
+
+.full-width {
+  width: 100%;
+}
+.learn-start-button {
+  background-color: #159F9E;
+  color: #F4F4F4;
+}
 .form-signin {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
+  padding-top: 25px;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
+      text-align: center;
+      font-size: 13px;
 }
 .form-signin .checkbox {
   font-weight: normal;
